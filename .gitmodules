@@ -1,0 +1,30 @@
+[submodule "sources/bundles/SharedTestResources.wcplugin"]
+	path = sources/bundles/SharedTestResources.wcplugin
+	url = git@github.com:thepotionlab/SharedTestResources.wcplugin.git
+[submodule "sources/potion-ruby"]
+	path = sources/potion-ruby
+	url = git@github.com:thepotionlab/potion-ruby.git
+[submodule "sources/bundles/Search.wcplugin"]
+	path = sources/bundles/Search.wcplugin
+	url = git@github.com:thepotionlab/Search.wcplugin.git
+[submodule "sources/bundles/Node.wcplugin"]
+	path = sources/bundles/Node.wcplugin
+	url = git@github.com:thepotionlab/Node.wcplugin.git
+[submodule "sources/bundles/Markdown.wcplugin"]
+	path = sources/bundles/Markdown.wcplugin
+	url = git@github.com:thepotionlab/Markdown.wcplugin.git
+[submodule "sources/bundles/Log.wcplugin"]
+	path = sources/bundles/Log.wcplugin
+	url = git@github.com:thepotionlab/Log.wcplugin.git
+[submodule "sources/bundles/HTML.wcplugin"]
+	path = sources/bundles/HTML.wcplugin
+	url = git@github.com:thepotionlab/HTML.wcplugin.git
+[submodule "sources/bundles/Coffee.wcplugin"]
+	path = sources/bundles/Coffee.wcplugin
+	url = git@github.com:thepotionlab/Coffee.wcplugin.git
+[submodule "sources/bundles/IRB.wcplugin"]
+	path = sources/bundles/IRB.wcplugin
+	url = git@github.com:thepotionlab/IRB.wcplugin.git
+[submodule "sources/bundles/SharedResources.wcplugin"]
+	path = sources/bundles/SharedResources.wcplugin
+	url = git@github.com:thepotionlab/SharedResources.wcplugin.git
