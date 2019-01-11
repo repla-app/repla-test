@@ -1,6 +1,3 @@
-[submodule "sources/bundles/SharedTestResources.wcplugin"]
-	path = sources/bundles/SharedTestResources.wcplugin
-	url = git@github.com:thepotionlab/SharedTestResources.wcplugin.git
 [submodule "sources/potion-ruby"]
 	path = sources/potion-ruby
 	url = git@github.com:thepotionlab/potion-ruby.git
