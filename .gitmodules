@@ -25,6 +25,3 @@
 [submodule "sources/bundles/IRB.wcplugin"]
 	path = sources/bundles/IRB.wcplugin
 	url = git@github.com:thepotionlab/IRB.wcplugin.git
-[submodule "sources/bundles/SharedResources.wcplugin"]
-	path = sources/bundles/SharedResources.wcplugin
-	url = git@github.com:thepotionlab/SharedResources.wcplugin.git
