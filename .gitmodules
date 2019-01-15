@@ -1,5 +1,5 @@
 [submodule "sources/potion-ruby"]
-	path = sources/potion-ruby
+	path = sources/repla-ruby
 	url = git@github.com:repla-app/repla-ruby.git
 [submodule "sources/bundles/Search.wcplugin"]
 	path = sources/bundles/Search.wcplugin
