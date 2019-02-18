@@ -11,22 +11,22 @@ end
 
 namespace :bundle do
   search_path = 'sources/bundles/search.replabundle/contents/resources/test/rakefile'
-  search_test_rakefile = file.join(file.dirname(__file__), search_path)
+  search_test_rakefile = File.join(File.dirname(__FILE__), search_path)
   load search_test_rakefile
   task test_search: ['search:tests']
 
   html_path = 'sources/bundles/HTML.replabundle/contents/resources/test/rakefile'
-  html_test_rakefile = file.join(file.dirname(__file__), html_path)
+  html_test_rakefile = File.join(File.dirname(__FILE__), html_path)
   load html_test_rakefile
   task test_html: ['html:tests']
 
   log_path = 'sources/bundles/Log.replabundle/contents/resources/test/rakefile'
-  log_test_rakefile = file.join(file.dirname(__file__), log_path)
+  log_test_rakefile = File.join(File.dirname(__FILE__), log_path)
   load log_test_rakefile
   task test_log: ['log:tests']
 
   irb_path = 'sources/bundles/IRB.replabundle/contents/resources/test/rakefile'
-  irb_test_rakefile = file.join(file.dirname(__file__), irb_path)
+  irb_test_rakefile = File.join(File.dirname(__FILE__), irb_path)
   load irb_test_rakefile
   task test_irb: ['irb:tests']
 
