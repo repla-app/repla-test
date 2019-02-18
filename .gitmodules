@@ -1,3 +1,15 @@
 [submodule "sources/potion-ruby"]
 	path = sources/repla-ruby
 	url = git@github.com:repla-app/repla-ruby.git
+[submodule "sources/bundles/Search.replabundle"]
+	path = sources/bundles/Search.replabundle
+	url = git@github.com:repla-app/Search.replabundle
+[submodule "sources/bundles/IRB.replabundle"]
+	path = sources/bundles/IRB.replabundle
+	url = git@github.com:repla-app/IRB.replabundle
+[submodule "sources/bundles/HTML.replabundle"]
+	path = sources/bundles/HTML.replabundle
+	url = git@github.com:repla-app/HTML.replabundle
+[submodule "sources/bundles/Log.replabundle"]
+	path = sources/bundles/Log.replabundle
+	url = git@github.com:repla-app/Log.replabundle
