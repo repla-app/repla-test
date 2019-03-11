@@ -35,5 +35,5 @@ namespace :bundle do
   load server_test_rakefile
   task test_server: ['server:tests']
 
-  task tests: %i[test_search test_html test_log test_irb]
+  task tests: %i[test_search test_html test_log test_irb test_server]
 end
