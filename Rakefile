@@ -30,5 +30,10 @@ namespace :bundle do
   load irb_test_rakefile
   task test_irb: ['irb:tests']
 
+  server_path = 'sources/bundles/Server.replabundle/contents/resources/test/rakefile'
+  server_test_rakefile = File.join(File.dirname(__FILE__), server_path)
+  load server_test_rakefile
+  task test_server: ['server:tests']
+
   task tests: %i[test_search test_html test_log test_irb]
 end

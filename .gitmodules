@@ -13,3 +13,6 @@
 [submodule "sources/bundles/Log.replabundle"]
 	path = sources/bundles/Log.replabundle
 	url = git@github.com:repla-app/Log.replabundle
+[submodule "sources/bundles/Server.replabundle"]
+	path = sources/bundles/Server.replabundle
+	url = git@github.com:repla-app/Server.replabundle.git
