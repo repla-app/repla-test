@@ -19,3 +19,6 @@
 [submodule "sources/repla-test-python"]
 	path = sources/repla-test-python
 	url = https://github.com/repla-app/repla-test-python.git
+[submodule "sources/repla-test-ruby"]
+	path = sources/repla-test-ruby
+	url = https://github.com/repla-app/repla-test-ruby.git
