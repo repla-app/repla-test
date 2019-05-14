@@ -48,7 +48,13 @@ namespace :bundle do
   load ruby_test_rakefile
   task test_ruby: ['ruby:tests']
 
+  node_path = 'sources/repla-test-node/test/Rakefile'
+  node_test_rakefile = File.join(File.dirname(__FILE__), node_path)
+  load node_test_rakefile
+  task test_node: ['node:tests']
+
   task tests: %i[
     test_search test_html test_log test_irb test_server test_python test_ruby
+    test_node
   ]
 end
