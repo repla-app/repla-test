@@ -22,3 +22,6 @@
 [submodule "sources/repla-test-ruby"]
 	path = sources/repla-test-ruby
 	url = https://github.com/repla-app/repla-test-ruby.git
+[submodule "sources/repla-test-node"]
+	path = sources/repla-test-node
+	url = https://github.com/repla-app/repla-test-node.git
