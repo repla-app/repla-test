@@ -10,7 +10,7 @@ namespace :gem do
 end
 
 namespace :bundle do
-  search_path = 'sources/packages/search.replaplugin/contents/resources/test/'\
+  search_path = 'sources/packages/Search.replaplugin/contents/resources/test/'\
     'Rakefile'
   search_test_rakefile = File.join(File.dirname(__FILE__), search_path)
   load search_test_rakefile
