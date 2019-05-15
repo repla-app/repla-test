@@ -1,12 +1,32 @@
-task default: %i[gem bundle]
+task default: %i[gem bundle server]
 task gem: ['gem:tests']
 task bundle: ['bundle:tests']
+task server: ['server:tests']
 
 namespace :gem do
   gem_test_rakefile = File.join(File.dirname(__FILE__),
                                 'sources/repla-ruby/test/Rakefile')
   load gem_test_rakefile
   task tests: ['default']
+end
+
+namespace :server do
+  python_path = 'sources/repla-test-python/test/Rakefile'
+  python_test_rakefile = File.join(File.dirname(__FILE__), python_path)
+  load python_test_rakefile
+  task test_python: ['python:tests']
+
+  ruby_path = 'sources/repla-test-ruby/test/Rakefile'
+  ruby_test_rakefile = File.join(File.dirname(__FILE__), ruby_path)
+  load ruby_test_rakefile
+  task test_ruby: ['ruby:tests']
+
+  node_path = 'sources/repla-test-node/test/Rakefile'
+  node_test_rakefile = File.join(File.dirname(__FILE__), node_path)
+  load node_test_rakefile
+  task test_node: ['node:tests']
+
+  task tests: %i[test_python test_ruby test_node]
 end
 
 namespace :bundle do
@@ -38,23 +58,5 @@ namespace :bundle do
   load server_test_rakefile
   task test_server: ['server:tests']
 
-  python_path = 'sources/repla-test-python/test/Rakefile'
-  python_test_rakefile = File.join(File.dirname(__FILE__), python_path)
-  load python_test_rakefile
-  task test_python: ['python:tests']
-
-  ruby_path = 'sources/repla-test-ruby/test/Rakefile'
-  ruby_test_rakefile = File.join(File.dirname(__FILE__), ruby_path)
-  load ruby_test_rakefile
-  task test_ruby: ['ruby:tests']
-
-  node_path = 'sources/repla-test-node/test/Rakefile'
-  node_test_rakefile = File.join(File.dirname(__FILE__), node_path)
-  load node_test_rakefile
-  task test_node: ['node:tests']
-
-  task tests: %i[
-    test_search test_html test_log test_irb test_server test_python test_ruby
-    test_node
-  ]
+  task tests: %i[test_search test_html test_log test_irb test_server]
 end
