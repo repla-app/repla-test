@@ -10,29 +10,29 @@ namespace :gem do
 end
 
 namespace :bundle do
-  search_path = 'sources/packages/Search.replaplugin/contents/resources/test/'\
+  search_path = 'sources/packages/Search.replaplugin/Contents/Resources/test/'\
     'Rakefile'
   search_test_rakefile = File.join(File.dirname(__FILE__), search_path)
   load search_test_rakefile
   task test_search: ['search:tests']
 
-  html_path = 'sources/packages/HTML.replaplugin/contents/resources/test/'\
+  html_path = 'sources/packages/HTML.replaplugin/Contents/Resources/test/'\
     'Rakefile'
   html_test_rakefile = File.join(File.dirname(__FILE__), html_path)
   load html_test_rakefile
   task test_html: ['html:tests']
 
-  log_path = 'sources/packages/Log.replaplugin/contents/resources/test/Rakefile'
+  log_path = 'sources/packages/Log.replaplugin/Contents/Resources/test/Rakefile'
   log_test_rakefile = File.join(File.dirname(__FILE__), log_path)
   load log_test_rakefile
   task test_log: ['log:tests']
 
-  irb_path = 'sources/packages/IRB.replaplugin/contents/resources/test/Rakefile'
+  irb_path = 'sources/packages/IRB.replaplugin/Contents/Resources/test/Rakefile'
   irb_test_rakefile = File.join(File.dirname(__FILE__), irb_path)
   load irb_test_rakefile
   task test_irb: ['irb:tests']
 
-  server_path = 'sources/packages/Server.replaplugin/contents/resources/test/'\
+  server_path = 'sources/packages/Server.replaplugin/Contents/Resources/test/'\
     'Rakefile'
   server_test_rakefile = File.join(File.dirname(__FILE__), server_path)
   load server_test_rakefile
