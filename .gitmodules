@@ -1,6 +1,6 @@
 [submodule "sources/potion-ruby"]
 	path = sources/repla-ruby
-	url = git@github.com:repla-app/repla-ruby.git
+	url = https://github.com/repla-app/repla-ruby.git
 [submodule "sources/packages/HTML.replaplugin"]
 	path = sources/packages/HTML.replaplugin
 	url = https://github.com/repla-app/HTML.replaplugin.git
