@@ -33,7 +33,7 @@ Some useful tips for getting a new virtual machine setup to run these tests.
 ### Express
 
 	cd sources/repla-test-node/external/repla-test-express/
-	repla server "DEBUG=myapp:* npm start"
+	repla server "DEBUG=myapp:* npm start" -p 3000
 
 ### Django
 
