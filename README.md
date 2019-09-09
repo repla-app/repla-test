@@ -28,20 +28,20 @@ Some useful tips for getting a new virtual machine setup to run these tests.
 ### Sinatra
 
 	cd sources/repla-test-ruby/external/repla-test-sinatra/
-	bundle exec ruby myapp.rb
+	repla server "bundle exec ruby myapp.rb"
 
 ### Express
 
 	cd sources/repla-test-node/external/repla-test-express/
-	DEBUG=myapp:* npm start
+	repla server "DEBUG=myapp:* npm start"
 
 ### Django
 
 	cd sources/repla-test-python/external/repla-test-django/
-	python3 manage.py runserver
+	repla server "python3 manage.py runserver"
 
 ### Jupyter
 
 No special folder.
 
-	jupyter notebook --no-browser
+	repla server "jupyter notebook --no-browser"
