@@ -35,6 +35,11 @@ Some useful tips for getting a new virtual machine setup to run these tests.
 	cd sources/repla-test-node/external/repla-test-express/
 	repla server "DEBUG=myapp:* npm start" -p 3000
 
+### React
+
+	cd sources/repla-test-node/external/repla-test-react/
+	repla server "BROWSER=none npm start"
+
 ### Django
 
 	cd sources/repla-test-python/external/repla-test-django/
