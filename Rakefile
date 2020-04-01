@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 task default: %i[gem bundle server]
 task gem: ['gem:tests']
 task bundle: ['bundle:tests']
@@ -42,6 +44,12 @@ namespace :bundle do
   load html_test_rakefile
   task test_html: ['html:tests']
 
+  markdown_path = 'sources/packages/Markdown.replaplugin/Contents/Resources/test/'\
+    'Rakefile'
+  markdown_test_rakefile = File.join(File.dirname(__FILE__), markdown_path)
+  load markdown_test_rakefile
+  task test_markdown: ['markdown:tests']
+
   log_path = 'sources/packages/Log.replaplugin/Contents/Resources/test/Rakefile'
   log_test_rakefile = File.join(File.dirname(__FILE__), log_path)
   load log_test_rakefile
@@ -58,5 +66,6 @@ namespace :bundle do
   load server_test_rakefile
   task test_server: ['server:tests']
 
-  task tests: %i[test_search test_html test_log test_irb test_server]
+  task tests: %i[test_search test_html test_log test_irb test_server
+                 test_markdown]
 end
