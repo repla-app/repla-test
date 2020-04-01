@@ -16,6 +16,9 @@
 [submodule "sources/packages/Server.replaplugin"]
 	path = sources/packages/Server.replaplugin
 	url = https://github.com/repla-app/Server.replaplugin.git
+[submodule "sources/packages/Markdown.replaplugin"]
+	path = sources/packages/Markdown.replaplugin
+	url = https://github.com/repla-app/Markdown.replaplugin.git
 [submodule "sources/repla-test-python"]
 	path = sources/repla-test-python
 	url = https://github.com/repla-app/repla-test-python.git
@@ -25,3 +28,4 @@
 [submodule "sources/repla-test-node"]
 	path = sources/repla-test-node
 	url = https://github.com/repla-app/repla-test-node.git
+
