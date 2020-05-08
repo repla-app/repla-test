@@ -73,5 +73,5 @@ namespace :bundle do
   task test_jekyll: ['jekyll:tests']
 
   task tests: %i[test_search test_html test_log test_irb test_server
-                 test_markdown]
+                 test_markdown test_jekyll]
 end
