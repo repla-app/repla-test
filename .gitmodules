@@ -29,3 +29,6 @@
 	path = sources/repla-test-node
 	url = https://github.com/repla-app/repla-test-node.git
 
+[submodule "sources/packages/Jekyll.replaplugin"]
+	path = sources/packages/Jekyll.replaplugin
+	url = git@github.com:repla-app/Jekyll.replaplugin.git

@@ -66,6 +66,12 @@ namespace :bundle do
   load server_test_rakefile
   task test_server: ['server:tests']
 
+  jekyll_path = 'sources/packages/Jekyll.replaplugin/Contents/Resources/test/'\
+    'Rakefile'
+  jekyll_test_rakefile = File.join(File.dirname(__FILE__), jekyll_path)
+  load jekyll_test_rakefile
+  task test_jekyll: ['jekyll:tests']
+
   task tests: %i[test_search test_html test_log test_irb test_server
                  test_markdown]
 end
