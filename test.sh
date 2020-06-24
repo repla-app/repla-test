@@ -2,4 +2,8 @@
 
 set -e
 cd "$(dirname "$0")"
-rake
+time rake
+echo
+echo "Finished running tests"
+echo "1. Check Xcode's memory debugger for leaked web views"
+echo "2. Add the above times to the most recent pull request"
