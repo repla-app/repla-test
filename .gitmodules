@@ -32,3 +32,6 @@
 [submodule "sources/packages/Jekyll.replaplugin"]
 	path = sources/packages/Jekyll.replaplugin
 	url = git@github.com:repla-app/Jekyll.replaplugin.git
+[submodule "sources/repla-node"]
+	path = sources/repla-node
+	url = git@github.com:repla-app/repla-node.git
