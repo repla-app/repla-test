@@ -1,7 +1,21 @@
-.PHONY: test
+.PHONY: test message all ruby server node
 
-test:
-	./test.sh
+test: all message
 
-test_server:
-	./test_server.sh
+message:
+	echo
+	echo "Finished running tests"
+	echo "1. Check Xcode's memory debugger for leaked web views"
+	echo "2. Add the above times to test-runs.csv"
+
+all:
+	time rake
+
+ruby:
+	rake ruby
+
+server:
+	rake server
+
+node:
+	rake node

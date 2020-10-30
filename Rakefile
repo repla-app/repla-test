@@ -1,16 +1,8 @@
 # frozen_string_literal: true
 
-task default: %i[gem bundle server]
-task gem: ['gem:tests']
-task bundle: ['bundle:tests']
+task default: %i[ruby server]
+task ruby: ['ruby:tests']
 task server: ['server:tests']
-
-namespace :gem do
-  gem_test_rakefile = File.join(File.dirname(__FILE__),
-                                'sources/repla-ruby/test/Rakefile')
-  load gem_test_rakefile
-  task tests: ['default']
-end
 
 namespace :server do
   python_path = 'sources/repla-test-python/test/Rakefile'
@@ -31,12 +23,18 @@ namespace :server do
   task tests: %i[test_python test_ruby test_node]
 end
 
-namespace :bundle do
+namespace :ruby do
+  gem_path = File.join(File.dirname(__FILE__),
+                                'sources/repla-ruby/test/Rakefile')
+  load gem_path
+  task test_gem: ['default']
+
   search_path = 'sources/packages/Search.replaplugin/Contents/Resources/test/'\
     'Rakefile'
-  search_test_rakefile = File.join(File.dirname(__FILE__), search_path)
-  load search_test_rakefile
+  load search_path
   task test_search: ['search:tests']
+
+  task tests: %i[test_search]
 
   html_path = 'sources/packages/HTML.replaplugin/Contents/Resources/test/'\
     'Rakefile'
@@ -72,6 +70,6 @@ namespace :bundle do
   load jekyll_test_rakefile
   task test_jekyll: ['jekyll:tests']
 
-  task tests: %i[test_search test_html test_log test_irb test_server
+  task tests: %i[test_gem test_search test_html test_log test_irb test_server
                  test_markdown test_jekyll]
 end
