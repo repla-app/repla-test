@@ -6,18 +6,15 @@ task server: ['server:tests']
 
 namespace :server do
   python_path = 'sources/repla-test-python/test/Rakefile'
-  python_test_rakefile = File.join(File.dirname(__FILE__), python_path)
-  load python_test_rakefile
+  load python_path
   task test_python: ['python:tests']
 
   ruby_path = 'sources/repla-test-ruby/test/Rakefile'
-  ruby_test_rakefile = File.join(File.dirname(__FILE__), ruby_path)
-  load ruby_test_rakefile
+  load ruby_path
   task test_ruby: ['ruby:tests']
 
   node_path = 'sources/repla-test-node/test/Rakefile'
-  node_test_rakefile = File.join(File.dirname(__FILE__), node_path)
-  load node_test_rakefile
+  load node_path
   task test_node: ['node:tests']
 
   task tests: %i[test_python test_ruby test_node]
@@ -34,40 +31,32 @@ namespace :ruby do
   load search_path
   task test_search: ['search:tests']
 
-  task tests: %i[test_search]
-
   html_path = 'sources/packages/HTML.replaplugin/Contents/Resources/test/'\
     'Rakefile'
-  html_test_rakefile = File.join(File.dirname(__FILE__), html_path)
-  load html_test_rakefile
+  load html_path
   task test_html: ['html:tests']
 
   markdown_path = 'sources/packages/Markdown.replaplugin/Contents/Resources/test/'\
     'Rakefile'
-  markdown_test_rakefile = File.join(File.dirname(__FILE__), markdown_path)
-  load markdown_test_rakefile
+  load markdown_path
   task test_markdown: ['markdown:tests']
 
   log_path = 'sources/packages/Log.replaplugin/Contents/Resources/test/Rakefile'
-  log_test_rakefile = File.join(File.dirname(__FILE__), log_path)
-  load log_test_rakefile
+  load log_path
   task test_log: ['log:tests']
 
   irb_path = 'sources/packages/IRB.replaplugin/Contents/Resources/test/Rakefile'
-  irb_test_rakefile = File.join(File.dirname(__FILE__), irb_path)
-  load irb_test_rakefile
+  load irb_path
   task test_irb: ['irb:tests']
 
   server_path = 'sources/packages/Server.replaplugin/Contents/Resources/test/'\
     'Rakefile'
-  server_test_rakefile = File.join(File.dirname(__FILE__), server_path)
-  load server_test_rakefile
+  load server_path
   task test_server: ['server:tests']
 
   jekyll_path = 'sources/packages/Jekyll.replaplugin/Contents/Resources/test/'\
     'Rakefile'
-  jekyll_test_rakefile = File.join(File.dirname(__FILE__), jekyll_path)
-  load jekyll_test_rakefile
+  load jekyll_path
   task test_jekyll: ['jekyll:tests']
 
   task tests: %i[test_gem test_search test_html test_log test_irb test_server
