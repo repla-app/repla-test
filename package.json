@@ -1,0 +1,16 @@
+{
+  "name": "repla-test",
+  "version": "0.0.1",
+  "description": "All Repla tests.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/repla-app/repla-test.git"
+  },
+  "author": "Roben Kleene",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
