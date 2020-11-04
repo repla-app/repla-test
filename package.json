@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "All Repla tests.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cd sources/repla-node/ && jest"
   },
   "repository": {
     "type": "git",
@@ -11,6 +11,6 @@
   },
   "author": "Roben Kleene",
   "dependencies": {
-    "jest": "^26.6.3"
+    "jest": "^26.4.2"
   }
 }
