@@ -1,4 +1,4 @@
-.PHONY: test message all ruby server node
+.PHONY: test message all ruby server node rake
 
 test: all message
 
@@ -8,7 +8,9 @@ message:
 	echo "1. Check Xcode's memory debugger for leaked web views"
 	echo "2. Add the above times to test-runs.csv"
 
-all:
+all: node rake
+
+rake:
 	time rake
 
 ruby:
@@ -18,4 +20,4 @@ server:
 	rake server
 
 node:
-	rake node
+	npm test
