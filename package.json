@@ -1,0 +1,16 @@
+{
+  "name": "repla-test",
+  "version": "0.0.1",
+  "description": "All Repla tests.",
+  "scripts": {
+    "test": "jest --rootDir sources/repla-node/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/repla-app/repla-test.git"
+  },
+  "author": "Roben Kleene",
+  "dependencies": {
+    "jest": "^26.4.2"
+  }
+}
