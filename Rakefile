@@ -22,7 +22,7 @@ end
 
 namespace :ruby do
   gem_path = File.join(File.dirname(__FILE__),
-                                'sources/repla-ruby/test/Rakefile')
+                       'sources/repla-ruby/test/Rakefile')
   load gem_path
   task test_gem: ['default']
 
